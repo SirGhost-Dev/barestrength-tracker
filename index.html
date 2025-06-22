@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BareStrength Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="#dashboard" class="nav-link">Dashboard</a>
+    <a href="#workouts" class="nav-link">Workouts</a>
+    <a href="#barefoot" class="nav-link">Barefoot Confidence</a>
+  </nav>
+
+  <main>
+    <div id="dashboard" class="page-view">
+      <!-- Dashboard Widgets -->
+      <section class="widget">
+        <!-- Workout Summary Widget will go here -->
+        <p>[Workout Summary Placeholder]</p>
+      </section>
+      <section class="widget">
+        <!-- Barefoot Progress Widget will go here -->
+        <p>[Barefoot Progress Placeholder]</p>
+      </section>
+    </div>
+
+    <div id="workouts" class="page-view" style="display:none">
+      <form id="workout-form" class="form">
+        <label>
+          Date
+          <input type="date" id="workout-date" name="date" required>
+        </label>
+        <label>
+          Duration (seconds) <span style="color:red">*</span>
+          <input type="number" id="workout-duration" name="duration" min="1" required>
+        </label>
+        <label>
+          Weight (kg)
+          <input type="number" id="workout-weight" name="weight" min="0" step="0.1">
+        </label>
+        <label>
+          Notes
+          <textarea id="workout-notes" name="notes" rows="2"></textarea>
+        </label>
+        <button type="submit">Save Workout</button>
+        <div id="workout-form-msg" class="form-msg"></div>
+      </form>
+      <div id="workout-log" class="workout-log"></div>
+    </div>
+
+    <div id="barefoot" class="page-view" style="display:none">
+      <section class="widget">
+        <h2>Barefooting Benefits</h2>
+        <ul class="info-blurbs">
+          <li>Improves foot strength and flexibility</li>
+          <li>Enhances balance and proprioception</li>
+          <li>Can reduce risk of certain injuries</li>
+          <li>Connects you with natural surfaces</li>
+        </ul>
+      </section>
+      <section class="widget">
+        <h2>Micro Goals</h2>
+        <ul class="micro-goals">
+          <li>Go to the mailbox barefoot</li>
+          <li>Stand on grass for 10 minutes</li>
+          <li>Walk outside for 5 minutes barefoot</li>
+          <li>Try a short barefoot walk on gravel</li>
+        </ul>
+      </section>
+      <section class="widget">
+        <h2>Confidence Tasks</h2>
+        <form id="barefoot-tasks-form">
+          <label><input type="checkbox" name="task" value="grass"> Stand on grass</label><br>
+          <label><input type="checkbox" name="task" value="sidewalk"> Walk on sidewalk</label><br>
+          <label><input type="checkbox" name="task" value="gravel"> Try gravel for 1 minute</label><br>
+          <label><input type="checkbox" name="task" value="store"> Enter a store barefoot</label><br>
+          <button type="button" id="reset-tasks">Reset Tasks</button>
+        </form>
+      </section>
+      <section class="widget">
+        <h2>Confidence Rating</h2>
+        <label for="confidence-rating">How confident do you feel barefoot? (0–10)</label><br>
+        <input type="range" id="confidence-rating" min="0" max="10" step="1">
+        <span id="confidence-value">5</span>/10
+      </section>
+    </div>
+  </main>
+</body>
+</html> 
