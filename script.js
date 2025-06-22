@@ -24,18 +24,26 @@ function createWorkoutForm() {
   container.innerHTML = `
     <h2>Log New Workout</h2>
     <form id="workoutForm" class="form">
-      <label>Date
+      <label>
+        Date
         <input type="date" id="workoutDate" value="${today}" required>
       </label>
-      <label>Duration (seconds) <span style="color: red">*</span>
+
+      <label>
+        Duration (seconds) <span style="color: red">*</span>
         <input type="number" id="workoutDuration" min="1" required>
       </label>
-      <label>Weight (kg)
+
+      <label>
+        Weight (kg)
         <input type="number" id="workoutWeight" min="0" step="0.1">
       </label>
-      <label>Notes
+
+      <label>
+        Notes
         <textarea id="workoutNotes" rows="3"></textarea>
       </label>
+
       <button type="submit">Save Workout</button>
       <div id="workoutFormMsg" class="form-msg"></div>
     </form>
@@ -125,18 +133,16 @@ function renderWorkoutLog() {
   });
 }
 
-// ----- Barefoot Tasks + Confidence Rating (Stub for Now) -----
+// ----- Barefoot Tracker Stubs -----
 function loadBarefootTasks() {
-  // Add logic later when you build this UI
-  console.log('Barefoot tasks loaded.');
+  console.log('Barefoot tasks loaded (stub)');
 }
 
 function loadConfidenceRating() {
-  // Add logic later when you build this UI
-  console.log('Confidence rating loaded.');
+  console.log('Confidence rating loaded (stub)');
 }
 
-// ----- App Init -----
+// ----- Init -----
 window.addEventListener('DOMContentLoaded', () => {
   createWorkoutForm();
   renderWorkoutLog();
