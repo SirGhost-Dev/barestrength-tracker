@@ -1,4 +1,4 @@
-// ----- Routing -----
+// --- Routing Logic ---
 function showViewFromHash() {
   const hash = window.location.hash.replace('#', '') || 'dashboard';
   const views = ['dashboard', 'workouts', 'barefoot'];
@@ -14,7 +14,7 @@ function showViewFromHash() {
 window.addEventListener('DOMContentLoaded', showViewFromHash);
 window.addEventListener('hashchange', showViewFromHash);
 
-// ----- Workout Form + Log -----
+// --- Workout Tracker Logic ---
 function createWorkoutForm() {
   const container = document.getElementById('workoutFormContainer');
   if (!container) return;
@@ -28,22 +28,18 @@ function createWorkoutForm() {
         Date
         <input type="date" id="workoutDate" value="${today}" required>
       </label>
-
       <label>
         Duration (seconds) <span style="color: red">*</span>
         <input type="number" id="workoutDuration" min="1" required>
       </label>
-
       <label>
         Weight (kg)
         <input type="number" id="workoutWeight" min="0" step="0.1">
       </label>
-
       <label>
         Notes
         <textarea id="workoutNotes" rows="3"></textarea>
       </label>
-
       <button type="submit">Save Workout</button>
       <div id="workoutFormMsg" class="form-msg"></div>
     </form>
@@ -107,7 +103,6 @@ function renderWorkoutLog() {
     </ul>
   `;
 
-  // Edit
   container.querySelectorAll('.edit-btn').forEach(btn => {
     btn.addEventListener('click', function () {
       const idx = parseInt(this.dataset.idx);
@@ -122,7 +117,6 @@ function renderWorkoutLog() {
     });
   });
 
-  // Delete
   container.querySelectorAll('.delete-btn').forEach(btn => {
     btn.addEventListener('click', function () {
       const idx = parseInt(this.dataset.idx);
@@ -133,19 +127,79 @@ function renderWorkoutLog() {
   });
 }
 
-// ----- Barefoot Tracker Stubs -----
-function loadBarefootTasks() {
-  console.log('Barefoot tasks loaded (stub)');
+// --- Barefoot Confidence Task Logic ---
+
+let barefootTasks = [];
+
+const taskFiles = [
+  'tasks_easy.json',
+  'tasks_medium.json',
+  'tasks_brave.json',
+  'tasks_urban.json'
+];
+
+async function loadBarefootTasksFromFiles() {
+  const allTasks = await Promise.all(
+    taskFiles.map(file =>
+      fetch(file)
+        .then(res => res.ok ? res.json() : [])
+        .catch(() => [])
+    )
+  );
+  barefootTasks = allTasks.flat();
+  renderFilteredBarefootTasks();
 }
 
-function loadConfidenceRating() {
-  console.log('Confidence rating loaded (stub)');
+function renderFilteredBarefootTasks() {
+  const container = document.getElementById('barefootTasksContainer');
+  if (!container) return;
+
+  const showOutdoor = document.getElementById('filter-outdoor').checked;
+  const includeUrban = document.getElementById('filter-urban').checked;
+  const difficultyLevels = ['easy', 'medium', 'brave'].filter(d =>
+    document.getElementById(`filter-difficulty-${d}`).checked
+  );
+  const selectedWeather = Array.from(document.querySelectorAll('.weather-filter:checked')).map(el => el.value);
+
+  const filtered = barefootTasks.filter(task => {
+    const matchDifficulty = difficultyLevels.includes(task.difficulty);
+    const matchLocation =
+      (task.location === 'outdoors' && showOutdoor) ||
+      (task.location === 'indoors' && !showOutdoor) ||
+      (task.location === 'urban' && includeUrban);
+    const matchWeather =
+      task.weather.includes('any') ||
+      selectedWeather.length === 0 ||
+      task.weather.some(w => selectedWeather.includes(w));
+    return matchDifficulty && matchLocation && matchWeather;
+  });
+
+  const shuffled = filtered.sort(() => 0.5 - Math.random());
+  const tasksToShow = shuffled.slice(0, 6);
+
+  if (tasksToShow.length === 0) {
+    container.innerHTML = "<p>No tasks match the selected filters. Try adjusting them!</p>";
+    return;
+  }
+
+  container.innerHTML = tasksToShow.map(task => `
+    <div class="widget">
+      <label>
+        <input type="checkbox" data-task="${task.text}">
+        ${task.text}
+      </label>
+    </div>
+  `).join('');
 }
 
-// ----- Init -----
-window.addEventListener('DOMContentLoaded', () => {
+document.getElementById('refreshTasks')?.addEventListener('click', renderFilteredBarefootTasks);
+document.querySelectorAll('.filters input')?.forEach(input => {
+  input.addEventListener('change', renderFilteredBarefootTasks);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  showViewFromHash();
   createWorkoutForm();
   renderWorkoutLog();
-  loadBarefootTasks();
-  loadConfidenceRating();
+  loadBarefootTasksFromFiles();
 });
