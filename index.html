@@ -37,22 +37,45 @@
       <div class="container">
         <h1>Barefoot Confidence</h1>
 
-        <div class="filters">
-          <label><input type="checkbox" id="filter-outdoor" checked> Outdoors only</label>
-          <label><input type="checkbox" id="filter-urban"> Include urban tasks</label>
-          <label><input type="checkbox" id="filter-difficulty-easy" checked> Easy</label>
-          <label><input type="checkbox" id="filter-difficulty-medium" checked> Medium</label>
-          <label><input type="checkbox" id="filter-difficulty-brave" checked> Brave</label>
+        <div class="filter-section">
+          <div class="filter-box">
+            <h3>Location</h3>
+            <label><input type="checkbox" id="filter-outdoor" checked> Outdoors only</label><br>
+            <label><input type="checkbox" id="filter-urban"> Include urban tasks</label>
+          </div>
 
-          <label><input type="checkbox" class="weather-filter" value="sunny"> Sunny</label>
-          <label><input type="checkbox" class="weather-filter" value="cold"> Cold</label>
-          <label><input type="checkbox" class="weather-filter" value="warm"> Warm</label>
-          <label><input type="checkbox" class="weather-filter" value="rainy"> Rainy</label>
+          <div class="filter-box">
+            <h3>Difficulty</h3>
+            <label><input type="checkbox" id="filter-difficulty-easy" checked> Easy</label><br>
+            <label><input type="checkbox" id="filter-difficulty-medium" checked> Medium</label><br>
+            <label><input type="checkbox" id="filter-difficulty-brave" checked> Brave</label>
+          </div>
 
-          <button id="refreshTasks">Refresh Tasks</button>
+          <div class="filter-box">
+            <h3>Weather</h3>
+            <label><input type="checkbox" class="weather-filter" value="sunny"> Sunny</label><br>
+            <label><input type="checkbox" class="weather-filter" value="cold"> Cold</label><br>
+            <label><input type="checkbox" class="weather-filter" value="warm"> Warm</label><br>
+            <label><input type="checkbox" class="weather-filter" value="rainy"> Rainy</label>
+          </div>
         </div>
 
-        <div id="barefootTasksContainer" class="barefoot-tasks-grid"></div>
+        <button id="refreshTasks" class="refresh-btn">Refresh Tasks</button>
+
+        <section>
+          <h2>Suggested Tasks</h2>
+          <div id="barefootTasksContainer" class="barefoot-tasks-grid"></div>
+        </section>
+
+        <section>
+          <h2>Accepted Tasks</h2>
+          <div id="acceptedTasksContainer" class="barefoot-tasks-grid"></div>
+        </section>
+
+        <section>
+          <h2>Completed Tasks</h2>
+          <div id="completedTasksContainer" class="barefoot-tasks-grid"></div>
+        </section>
       </div>
     </div>
   </main>

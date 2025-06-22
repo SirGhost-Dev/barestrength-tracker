@@ -9,9 +9,21 @@ function showViewFromHash() {
       viewElement.style.display = (viewId === hash) ? 'block' : 'none';
     }
   });
+
+  if (hash === 'barefoot') {
+    renderFilteredBarefootTasks();
+    renderAcceptedTasks();
+    renderCompletedTasks();
+  }
 }
 
-window.addEventListener('DOMContentLoaded', showViewFromHash);
+window.addEventListener('DOMContentLoaded', () => {
+  showViewFromHash();
+  createWorkoutForm();
+  renderWorkoutLog();
+  loadBarefootTasksFromFiles();
+});
+
 window.addEventListener('hashchange', showViewFromHash);
 
 // --- Workout Tracker Logic ---
@@ -128,15 +140,8 @@ function renderWorkoutLog() {
 }
 
 // --- Barefoot Confidence Task Logic ---
-
 let barefootTasks = [];
-
-const taskFiles = [
-  'tasks_easy.json',
-  'tasks_medium.json',
-  'tasks_brave.json',
-  'tasks_urban.json'
-];
+const taskFiles = ['tasks_easy.json', 'tasks_medium.json', 'tasks_brave.json', 'tasks_urban.json'];
 
 async function loadBarefootTasksFromFiles() {
   const allTasks = await Promise.all(
@@ -148,16 +153,34 @@ async function loadBarefootTasksFromFiles() {
   );
   barefootTasks = allTasks.flat();
   renderFilteredBarefootTasks();
+  renderAcceptedTasks();
+  renderCompletedTasks();
+}
+
+function getAcceptedTasks() {
+  return JSON.parse(localStorage.getItem('acceptedTasks') || '[]');
+}
+
+function getCompletedTasks() {
+  return JSON.parse(localStorage.getItem('completedTasks') || '[]');
+}
+
+function saveAcceptedTasks(tasks) {
+  localStorage.setItem('acceptedTasks', JSON.stringify(tasks));
+}
+
+function saveCompletedTasks(tasks) {
+  localStorage.setItem('completedTasks', JSON.stringify(tasks));
 }
 
 function renderFilteredBarefootTasks() {
   const container = document.getElementById('barefootTasksContainer');
   if (!container) return;
 
-  const showOutdoor = document.getElementById('filter-outdoor').checked;
-  const includeUrban = document.getElementById('filter-urban').checked;
+  const showOutdoor = document.getElementById('filter-outdoor')?.checked;
+  const includeUrban = document.getElementById('filter-urban')?.checked;
   const difficultyLevels = ['easy', 'medium', 'brave'].filter(d =>
-    document.getElementById(`filter-difficulty-${d}`).checked
+    document.getElementById(`filter-difficulty-${d}`)?.checked
   );
   const selectedWeather = Array.from(document.querySelectorAll('.weather-filter:checked')).map(el => el.value);
 
@@ -183,23 +206,86 @@ function renderFilteredBarefootTasks() {
   }
 
   container.innerHTML = tasksToShow.map(task => `
-    <div class="widget">
-      <label>
-        <input type="checkbox" data-task="${task.text}">
-        ${task.text}
-      </label>
+    <div class="widget task-card">
+      <div class="task-main">
+        <label>${task.text}</label>
+        <span class="badge badge-${task.difficulty}">${task.difficulty}</span>
+      </div>
+      <button class="accept-task-btn" data-text="${task.text}">Accept</button>
     </div>
   `).join('');
+
+  container.querySelectorAll('.accept-task-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const taskText = btn.dataset.text;
+      const existing = getAcceptedTasks();
+      if (!existing.includes(taskText)) {
+        existing.push(taskText);
+        saveAcceptedTasks(existing);
+        renderAcceptedTasks();
+      }
+    });
+  });
+}
+
+function renderAcceptedTasks() {
+  const container = document.getElementById('acceptedTasksContainer');
+  if (!container) return;
+
+  const accepted = getAcceptedTasks();
+  if (accepted.length === 0) {
+    container.innerHTML = "<p>No accepted tasks yet.</p>";
+    return;
+  }
+
+  container.innerHTML = `
+    <h3>Accepted Tasks</h3>
+    <ul class="task-log">
+      ${accepted.map(task => `
+        <li>
+          ${task}
+          <button class="complete-btn" data-task="${task}">Complete</button>
+        </li>
+      `).join('')}
+    </ul>
+  `;
+
+  container.querySelectorAll('.complete-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const task = btn.dataset.task;
+      let accepted = getAcceptedTasks();
+      let completed = getCompletedTasks();
+      accepted = accepted.filter(t => t !== task);
+      completed.push({ text: task, date: new Date().toISOString() });
+      saveAcceptedTasks(accepted);
+      saveCompletedTasks(completed);
+      renderAcceptedTasks();
+      renderCompletedTasks();
+    });
+  });
+}
+
+function renderCompletedTasks() {
+  const container = document.getElementById('completedTasksContainer');
+  if (!container) return;
+
+  const completed = getCompletedTasks();
+  if (completed.length === 0) {
+    container.innerHTML = "<p>No completed tasks yet.</p>";
+    return;
+  }
+
+  container.innerHTML = `
+    <h3>Completed Tasks</h3>
+    <ul class="task-log">
+      ${completed.slice().reverse().map(task => `
+        <li>${task.text} <span class="date">(${new Date(task.date).toLocaleDateString()})</span></li>
+      `).join('')}
+    </ul>
+  `;
 }
 
 document.getElementById('refreshTasks')?.addEventListener('click', renderFilteredBarefootTasks);
 document.querySelectorAll('.filters input')?.forEach(input => {
   input.addEventListener('change', renderFilteredBarefootTasks);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  showViewFromHash();
-  createWorkoutForm();
-  renderWorkoutLog();
-  loadBarefootTasksFromFiles();
 });
