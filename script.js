@@ -36,22 +36,13 @@ function createWorkoutForm() {
   container.innerHTML = `
     <h2>Log New Workout</h2>
     <form id="workoutForm" class="form">
-      <label>
-        Date
-        <input type="date" id="workoutDate" value="${today}" required>
-      </label>
-      <label>
-        Duration (seconds) <span style="color: red">*</span>
-        <input type="number" id="workoutDuration" min="1" required>
-      </label>
-      <label>
-        Weight (kg)
-        <input type="number" id="workoutWeight" min="0" step="0.1">
-      </label>
-      <label>
-        Notes
-        <textarea id="workoutNotes" rows="3"></textarea>
-      </label>
+      <label>Date<input type="date" id="workoutDate" value="${today}" required></label>
+      <label>Duration (seconds) <span style="color: red">*</span>
+        <input type="number" id="workoutDuration" min="1" required></label>
+      <label>Weight (kg)
+        <input type="number" id="workoutWeight" min="0" step="0.1"></label>
+      <label>Notes
+        <textarea id="workoutNotes" rows="3"></textarea></label>
       <button type="submit">Save Workout</button>
       <div id="workoutFormMsg" class="form-msg"></div>
     </form>
@@ -208,20 +199,21 @@ function renderFilteredBarefootTasks() {
   container.innerHTML = tasksToShow.map(task => `
     <div class="widget task-card">
       <div class="task-main">
-        <label>${task.text}</label>
         <span class="badge badge-${task.difficulty}">${task.difficulty}</span>
+        <label>${task.text}</label>
       </div>
-      <button class="accept-task-btn" data-text="${task.text}">Accept</button>
+      <button class="accept-task-btn" data-text="${task.text}" data-difficulty="${task.difficulty}">Accept</button>
     </div>
   `).join('');
 
   container.querySelectorAll('.accept-task-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const taskText = btn.dataset.text;
-      const existing = getAcceptedTasks();
-      if (!existing.includes(taskText)) {
-        existing.push(taskText);
-        saveAcceptedTasks(existing);
+      const difficulty = btn.dataset.difficulty;
+      const accepted = getAcceptedTasks();
+      if (!accepted.some(t => t.text === taskText)) {
+        accepted.push({ text: taskText, difficulty });
+        saveAcceptedTasks(accepted);
         renderAcceptedTasks();
       }
     });
@@ -238,25 +230,22 @@ function renderAcceptedTasks() {
     return;
   }
 
-  container.innerHTML = `
-    <h3>Accepted Tasks</h3>
-    <ul class="task-log">
-      ${accepted.map(task => `
-        <li>
-          ${task}
-          <button class="complete-btn" data-task="${task}">Complete</button>
-        </li>
-      `).join('')}
-    </ul>
-  `;
+  container.innerHTML = accepted.map(task => `
+    <div class="widget task-card">
+      <div class="task-main">
+        <span class="badge badge-${task.difficulty}">${task.difficulty}</span>
+        <label>${task.text}</label>
+      </div>
+      <button class="complete-task-btn" data-text="${task.text}">Mark Complete</button>
+    </div>
+  `).join('');
 
-  container.querySelectorAll('.complete-btn').forEach(btn => {
+  container.querySelectorAll('.complete-task-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const task = btn.dataset.task;
-      let accepted = getAcceptedTasks();
-      let completed = getCompletedTasks();
-      accepted = accepted.filter(t => t !== task);
-      completed.push({ text: task, date: new Date().toISOString() });
+      const text = btn.dataset.text;
+      const accepted = getAcceptedTasks().filter(t => t.text !== text);
+      const completed = getCompletedTasks();
+      completed.push({ text, date: new Date().toISOString() });
       saveAcceptedTasks(accepted);
       saveCompletedTasks(completed);
       renderAcceptedTasks();
@@ -275,14 +264,12 @@ function renderCompletedTasks() {
     return;
   }
 
-  container.innerHTML = `
-    <h3>Completed Tasks</h3>
-    <ul class="task-log">
-      ${completed.slice().reverse().map(task => `
-        <li>${task.text} <span class="date">(${new Date(task.date).toLocaleDateString()})</span></li>
-      `).join('')}
-    </ul>
-  `;
+  container.innerHTML = completed.slice().reverse().map(task => `
+    <div class="widget task-card completed">
+      <label>${task.text}</label>
+      <span class="date">(${new Date(task.date).toLocaleDateString()})</span>
+    </div>
+  `).join('');
 }
 
 document.getElementById('refreshTasks')?.addEventListener('click', renderFilteredBarefootTasks);
