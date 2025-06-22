@@ -1,6 +1,14 @@
 [
   {
-    "text": "Walk barefoot down the metal stairs",
+    "text": "Place your feet on a cold stone and count to 100",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Walk barefoot to your bin and back twice",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -8,7 +16,15 @@
     ]
   },
   {
-    "text": "Step barefoot into garden after it rains",
+    "text": "Place your feet on a cold stone and count to 20",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Go barefoot outside during a light drizzle and pause in it",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -16,7 +32,7 @@
     ]
   },
   {
-    "text": "Carry out recycling barefoot",
+    "text": "Walk barefoot on the garden path for 5 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -24,31 +40,7 @@
     ]
   },
   {
-    "text": "Walk barefoot across cold tiles in winter",
-    "difficulty": "medium",
-    "location": "indoors",
-    "weather": [
-      "cold"
-    ]
-  },
-  {
-    "text": "Climb up and down your stairs barefoot 3 times",
-    "difficulty": "medium",
-    "location": "indoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Stand barefoot outside at night for 1 minute",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "cold"
-    ]
-  },
-  {
-    "text": "Walk barefoot to the garden shed and pause",
+    "text": "Do 10 squats barefoot on gravel or uneven ground",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -56,32 +48,97 @@
     ]
   },
   {
-    "text": "Stand barefoot on wet concrete for 30 seconds",
+    "text": "Do one barefoot lap down and back up your metal steps",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
-      "rainy"
+      "any"
     ]
   },
   {
-    "text": "Try a 30-second cold foot shower",
+    "text": "Walk barefoot to your bin and back twice",
     "difficulty": "medium",
-    "location": "indoors",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot to your bin and back twice",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot on the garden path for 9 minutes while focusing on breath",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot in the grass under moonlight for 1 minutes",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot on cold concrete for 150 seconds",
+    "difficulty": "medium",
+    "location": "outdoors",
     "weather": [
       "cold"
     ]
   },
   {
-    "text": "Rinse your feet with a hose in the garden",
+    "text": "Do 4 slow lunges barefoot across the garden",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
-      "warm",
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot on cold concrete for 60 seconds",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Stand barefoot on wet concrete and count to 100",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "rainy",
+      "cold"
+    ]
+  },
+  {
+    "text": "Place your feet on a cold stone and count to 40",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Step barefoot into morning dew for 4 minutes of stillness",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold",
       "sunny"
     ]
   },
   {
-    "text": "Carry a watering can to garden barefoot",
+    "text": "Walk barefoot on the garden path for 3 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -89,64 +146,16 @@
     ]
   },
   {
-    "text": "Do barefoot stretches in your hallway",
-    "difficulty": "medium",
-    "location": "indoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot around the garden in circles",
+    "text": "Step barefoot into morning dew for 1 minutes of stillness",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Stand barefoot on grass with closed eyes",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Balance barefoot on uneven bricks",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Stand barefoot near your porch while bins are out",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Sit barefoot on steps and read for 5 mins",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Jog barefoot lightly on grass for 20 seconds",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "warm",
+      "cold",
       "sunny"
     ]
   },
   {
-    "text": "Take a barefoot mirror selfie outdoors",
+    "text": "Stand barefoot in the grass under moonlight for 2 minutes",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -154,23 +163,7 @@
     ]
   },
   {
-    "text": "Do gentle yoga barefoot on a towel outside",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "warm"
-    ]
-  },
-  {
-    "text": "Stand barefoot in the cold breeze for 30s",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "cold"
-    ]
-  },
-  {
-    "text": "Step barefoot into muddy soil after watering plants",
+    "text": "Step into your garden barefoot right after a rain",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -178,7 +171,7 @@
     ]
   },
   {
-    "text": "Sweep your outdoor steps barefoot",
+    "text": "Stand barefoot in the grass under moonlight for 4 minutes",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -186,7 +179,7 @@
     ]
   },
   {
-    "text": "Do a slow barefoot lap around your garden",
+    "text": "Stand barefoot in the grass under moonlight for 3 minutes",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -194,7 +187,23 @@
     ]
   },
   {
-    "text": "Sit on concrete barefoot and stretch legs",
+    "text": "Stand in a shallow puddle barefoot for 90 seconds",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "rainy"
+    ]
+  },
+  {
+    "text": "Stand barefoot on cold concrete for 120 seconds",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Walk barefoot on the garden path for 6 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -202,7 +211,7 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Do 3 slow lunges barefoot across the garden",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -210,7 +219,15 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Stand barefoot on cold concrete for 90 seconds",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Walk barefoot on the garden path for 7 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -218,7 +235,7 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Do 6 slow lunges barefoot across the garden",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -226,7 +243,7 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Walk barefoot on the garden path for 1 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -234,7 +251,7 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Walk barefoot on the garden path for 4 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -242,7 +259,15 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Place your feet on a cold stone and count to 80",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Stand barefoot in the grass under moonlight for 5 minutes",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -250,7 +275,15 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Put cold water in a tray and stand in it barefoot for 3 minutes",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Take out recycling barefoot and wait for 30 seconds before returning",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -258,7 +291,7 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Hop across your garden path barefoot without touching concrete",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -266,7 +299,16 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Step barefoot into morning dew for 2 minutes of stillness",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Walk barefoot on the garden path for 10 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -274,7 +316,7 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Walk barefoot on the garden path for 8 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -282,7 +324,7 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Do 7 slow lunges barefoot across the garden",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -290,7 +332,16 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Step barefoot into morning dew for 3 minutes of stillness",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Walk barefoot around the garden perimeter twice at night",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -298,7 +349,25 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Step barefoot into morning dew for 5 minutes of stillness",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Stand barefoot on a damp doormat outside for 2 minutes",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "rainy",
+      "cold"
+    ]
+  },
+  {
+    "text": "Do 5 slow lunges barefoot across the garden",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -306,7 +375,15 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Place your feet on a cold stone and count to 60",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Walk barefoot to your bin and back twice",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -314,7 +391,15 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Stand barefoot on cold concrete for 30 seconds",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Walk barefoot to your bin and back twice",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [
@@ -322,159 +407,7 @@
     ]
   },
   {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
-    "difficulty": "medium",
-    "location": "outdoors",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk barefoot down the metal stairs (variation)",
+    "text": "Walk barefoot on the garden path for 2 minutes while focusing on breath",
     "difficulty": "medium",
     "location": "outdoors",
     "weather": [

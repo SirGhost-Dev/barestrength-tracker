@@ -1,14 +1,6 @@
 [
   {
-    "text": "Step barefoot into your shared hallway",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Walk to your porch barefoot while neighbours might be around",
+    "text": "Walk barefoot to the nearest postbox and back.",
     "difficulty": "brave",
     "location": "urban",
     "weather": [
@@ -16,8 +8,99 @@
     ]
   },
   {
-    "text": "Water your porch plants barefoot during daytime",
-    "difficulty": "medium",
+    "text": "Step barefoot into your shared hallway for a minute.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Take the bins out barefoot and pause outside.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot to your porch and stand quietly for 2 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Descend your metal garden steps barefoot, touch the grass, and return.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot along the gravel alley behind your building (if safe).",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "dry",
+      "warm"
+    ]
+  },
+  {
+    "text": "Leave your flat barefoot and go as far as the edge of the property.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot at the front door threshold, visible from the street.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Sit barefoot on your garden concrete and do nothing for 5 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm"
+    ]
+  },
+  {
+    "text": "Carry your shoes in a bag and walk 2 minutes barefoot down a quiet street.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm",
+      "any"
+    ]
+  },
+  {
+    "text": "Start a walk barefoot and only put your shoes on after 10 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm",
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot into the city walls near the cathedral.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm"
+    ]
+  },
+  {
+    "text": "Explore a quiet path near St. Giles Hill barefoot for 5 minutes.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "sunny",
@@ -25,48 +108,8 @@
     ]
   },
   {
-    "text": "Stand barefoot by your bins on collection day",
+    "text": "Visit the Water Meadows barefoot and touch the stream edge.",
     "difficulty": "brave",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Take a barefoot bin bag out mid-day",
-    "difficulty": "brave",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Wave to a neighbour while barefoot at the porch",
-    "difficulty": "brave",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Wipe down your front door barefoot",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Brush the shared stair area barefoot",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Stand barefoot in porch during sunset",
-    "difficulty": "medium",
     "location": "urban",
     "weather": [
       "sunny",
@@ -74,56 +117,17 @@
     ]
   },
   {
-    "text": "Take out recycling barefoot at dusk",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Spend 1 minute barefoot on your front step",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Tie your shoes barefoot on the front mat",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Open front door barefoot and breathe fresh air",
-    "difficulty": "easy",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Check the mail barefoot (if at front door)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Stand barefoot in your hallway as someone walks past outside",
+    "text": "Walk a portion of the Pilgrims\u2019 Way barefoot near the bridge.",
     "difficulty": "brave",
     "location": "urban",
     "weather": [
-      "any"
+      "sunny",
+      "warm"
     ]
   },
   {
-    "text": "Sit on the front step barefoot and sip tea",
-    "difficulty": "medium",
+    "text": "Sit barefoot on the grass near Winchester College if empty.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "warm",
@@ -131,7 +135,7 @@
     ]
   },
   {
-    "text": "Walk barefoot to your car parked nearby (if applicable)",
+    "text": "Step barefoot onto the Winchester station platform (low-traffic side).",
     "difficulty": "brave",
     "location": "urban",
     "weather": [
@@ -139,15 +143,7 @@
     ]
   },
   {
-    "text": "Take a photo of your feet on your porch",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Chat briefly to a neighbour while barefoot",
+    "text": "Ride the train to Eastleigh barefoot for one stop, shoes in bag.",
     "difficulty": "brave",
     "location": "urban",
     "weather": [
@@ -155,331 +151,347 @@
     ]
   },
   {
-    "text": "Open shared front door barefoot and peek out",
-    "difficulty": "medium",
+    "text": "Walk barefoot to the footpath behind your local supermarket.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Explore a back lane barefoot for at least 5 minutes.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Step barefoot into the cathedral green and stand for 2 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "sunny",
+      "warm"
+    ]
+  },
+  {
+    "text": "Take a barefoot lap around your block at night.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Sit barefoot on a bench near Wolvesey Castle early morning.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "cold",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Walk barefoot in a rainy alley with an umbrella.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "rainy"
+    ]
+  },
+  {
+    "text": "Stand barefoot on the path near St. Catherine\u2019s Hill base.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "sunny",
+      "warm"
+    ]
+  },
+  {
+    "text": "Step barefoot into a parking lot for 1 minute.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Walk barefoot on a train platform (off-peak).",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Exit your flat barefoot and walk down your street, shoes in hand.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Walk barefoot to a friend\u2019s place (nearby only).",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Walk down your road and cross one side street barefoot.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Visit a Winchester park and take off shoes quietly for 5 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm"
+    ]
+  },
+  {
+    "text": "Walk barefoot to your nearest post office box and back.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Try walking 200 meters barefoot in a quiet cul-de-sac.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Walk barefoot around a churchyard path.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm"
+    ]
+  },
+  {
+    "text": "Sit barefoot on a grassy hilltop bench near the river.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "sunny"
+    ]
+  },
+  {
+    "text": "Walk from your home to a corner shop barefoot (early hours).",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Attend an early morning outdoor yoga barefoot in the park.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm"
+    ]
+  },
+  {
+    "text": "Walk barefoot to a small Winchester event or market stall.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "sunny"
+    ]
+  },
+  {
+    "text": "Explore a side alley barefoot for a few minutes.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Walk from home to a nature path barefoot with shoes in bag.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Explore a nearby car-free residential street barefoot.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Walk barefoot to an ATM and back.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Ride a train to Southampton barefoot, shoes in bag.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Walk barefoot through a large underpass or archway.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "dry"
+    ]
+  },
+  {
+    "text": "Visit the South Downs trailhead barefoot for a few minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "sunny",
+      "warm"
+    ]
+  },
+  {
+    "text": "Take a barefoot walk across a cobbled street briefly.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "dry"
+    ]
+  },
+  {
+    "text": "Step barefoot through a gated field entrance nearby.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "sunny"
+    ]
+  },
+  {
+    "text": "Walk barefoot along a tree-lined street in your area.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Explore a cycle path barefoot for 10 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "warm",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Visit the outside of a closed building barefoot at night.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Sit barefoot by the river near Winchester Wharf.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "sunny"
+    ]
+  },
+  {
+    "text": "Try barefoot walking at night after a rain shower.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "rainy"
+    ]
+  },
+  {
+    "text": "Go barefoot while walking a pet (if you have one).",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Walk barefoot past three houses before turning back.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Exit your flat barefoot and cross to the other side of your street.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Pause barefoot at a public notice board or bulletin.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Stand barefoot at the edge of a car park, near the garden center.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Visit your favorite quiet route barefoot in early morning.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": [
+      "sunny"
+    ]
+  },
+  {
+    "text": "Walk from your building to a bus stop barefoot, shoes in hand.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
       "any"
     ]
   },
   {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
+    "text": "Try barefooting through a forest edge path within city limits.",
+    "difficulty": "brave",
     "location": "urban",
     "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
-    ]
-  },
-  {
-    "text": "Step barefoot into your shared hallway (variation)",
-    "difficulty": "medium",
-    "location": "urban",
-    "weather": [
-      "any"
+      "sunny",
+      "warm"
     ]
   }
 ]
