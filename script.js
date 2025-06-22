@@ -145,4 +145,23 @@ function loadConfidenceRating() {
 document.addEventListener('DOMContentLoaded', function() {
   loadBarefootTasks();
   loadConfidenceRating();
-}); 
+});
+
+// Routing logic
+function showViewFromHash() {
+  const hash = window.location.hash || '#dashboard';
+  const views = ['#dashboard', '#workouts', '#barefoot'];
+  
+  views.forEach(viewId => {
+    const viewElement = document.querySelector(viewId);
+    if (viewElement) {
+      viewElement.style.display = (hash === viewId) ? 'block' : 'none';
+    }
+  });
+}
+
+// Show correct view on page load
+document.addEventListener('DOMContentLoaded', showViewFromHash);
+
+// Show correct view when hash changes
+window.addEventListener('hashchange', showViewFromHash); 
