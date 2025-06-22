@@ -32,11 +32,37 @@ body {
 }
 
 main {
-  padding: 1rem;
-  max-width: 480px;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
+/* Container for interior sections */
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Prevent form inputs from overflowing */
+.form input[type="date"],
+.form input[type="number"],
+.form input[type="text"],
+.form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Better mobile spacing */
+@media (max-width: 480px) {
+  main {
+    padding: 0.75rem;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}
 .page-view {
   display: block;
 }
