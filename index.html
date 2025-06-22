@@ -7,17 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="#dashboard">Dashboard</a>
-    <a href="#workouts">Workouts</a>
-    <a href="#barefoot">Barefoot Confidence</a>
+  <nav class="nav">
+    <a href="#dashboard" class="nav-link">Dashboard</a>
+    <a href="#workouts" class="nav-link">Workouts</a>
+    <a href="#barefoot" class="nav-link">Barefoot Confidence</a>
   </nav>
 
-  <!-- Add MAIN wrapper here -->
   <main>
-
     <!-- Dashboard View -->
     <div id="dashboard" class="view">
       <div class="container">
@@ -40,10 +36,25 @@
     <div id="barefoot" class="view" style="display: none;">
       <div class="container">
         <h1>Barefoot Confidence</h1>
-        <div id="barefootTasksContainer"></div>
+
+        <div class="filters">
+          <label><input type="checkbox" id="filter-outdoor" checked> Outdoors only</label>
+          <label><input type="checkbox" id="filter-urban"> Include urban tasks</label>
+          <label><input type="checkbox" id="filter-difficulty-easy" checked> Easy</label>
+          <label><input type="checkbox" id="filter-difficulty-medium" checked> Medium</label>
+          <label><input type="checkbox" id="filter-difficulty-brave" checked> Brave</label>
+
+          <label><input type="checkbox" class="weather-filter" value="sunny"> Sunny</label>
+          <label><input type="checkbox" class="weather-filter" value="cold"> Cold</label>
+          <label><input type="checkbox" class="weather-filter" value="warm"> Warm</label>
+          <label><input type="checkbox" class="weather-filter" value="rainy"> Rainy</label>
+
+          <button id="refreshTasks">Refresh Tasks</button>
+        </div>
+
+        <div id="barefootTasksContainer" class="barefoot-tasks-grid"></div>
       </div>
     </div>
-
   </main>
 
   <script src="script.js"></script>
