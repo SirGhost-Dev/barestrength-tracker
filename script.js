@@ -14,6 +14,7 @@ function showViewFromHash() {
     renderFilteredBarefootTasks();
     renderAcceptedTasks();
     renderCompletedTasks();
+    setupTaskControlButtons();
   }
 }
 
@@ -174,6 +175,7 @@ function renderFilteredBarefootTasks() {
     document.getElementById(`filter-difficulty-${d}`)?.checked
   );
   const selectedWeather = Array.from(document.querySelectorAll('.weather-filter:checked')).map(el => el.value);
+  const accepted = getAcceptedTasks();
 
   const filtered = barefootTasks.filter(task => {
     const matchDifficulty = difficultyLevels.includes(task.difficulty);
@@ -185,7 +187,8 @@ function renderFilteredBarefootTasks() {
       task.weather.includes('any') ||
       selectedWeather.length === 0 ||
       task.weather.some(w => selectedWeather.includes(w));
-    return matchDifficulty && matchLocation && matchWeather;
+    const notAlreadyAccepted = !accepted.some(a => a.text === task.text);
+    return matchDifficulty && matchLocation && matchWeather && notAlreadyAccepted;
   });
 
   const shuffled = filtered.sort(() => 0.5 - Math.random());
@@ -215,6 +218,7 @@ function renderFilteredBarefootTasks() {
         accepted.push({ text: taskText, difficulty });
         saveAcceptedTasks(accepted);
         renderAcceptedTasks();
+        renderFilteredBarefootTasks();
       }
     });
   });
@@ -250,6 +254,7 @@ function renderAcceptedTasks() {
       saveCompletedTasks(completed);
       renderAcceptedTasks();
       renderCompletedTasks();
+      renderFilteredBarefootTasks();
     });
   });
 }
@@ -270,6 +275,35 @@ function renderCompletedTasks() {
       <span class="date">(${new Date(task.date).toLocaleDateString()})</span>
     </div>
   `).join('');
+}
+
+function setupTaskControlButtons() {
+  const container = document.getElementById('barefoot');
+  if (!document.getElementById('clearButtonsContainer')) {
+    const btnWrapper = document.createElement('div');
+    btnWrapper.id = 'clearButtonsContainer';
+
+    const clearAccepted = document.createElement('button');
+    clearAccepted.className = 'refresh-btn';
+    clearAccepted.textContent = 'Clear Accepted Tasks';
+    clearAccepted.onclick = () => {
+      localStorage.removeItem('acceptedTasks');
+      renderAcceptedTasks();
+      renderFilteredBarefootTasks();
+    };
+
+    const clearCompleted = document.createElement('button');
+    clearCompleted.className = 'refresh-btn';
+    clearCompleted.textContent = 'Clear Completed Tasks';
+    clearCompleted.onclick = () => {
+      localStorage.removeItem('completedTasks');
+      renderCompletedTasks();
+    };
+
+    btnWrapper.appendChild(clearAccepted);
+    btnWrapper.appendChild(clearCompleted);
+    container.appendChild(btnWrapper);
+  }
 }
 
 document.getElementById('refreshTasks')?.addEventListener('click', renderFilteredBarefootTasks);
