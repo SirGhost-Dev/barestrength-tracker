@@ -164,4 +164,75 @@ function showViewFromHash() {
 document.addEventListener('DOMContentLoaded', showViewFromHash);
 
 // Show correct view when hash changes
-window.addEventListener('hashchange', showViewFromHash); 
+window.addEventListener('hashchange', showViewFromHash);
+
+// Generate and insert workout form
+function createWorkoutForm() {
+  const container = document.getElementById('workoutFormContainer');
+  if (!container) return;
+  
+  const today = new Date().toISOString().split('T')[0];
+  
+  container.innerHTML = `
+    <h2>Log New Workout</h2>
+    <form id="workoutForm">
+      <label>
+        Date
+        <input type="date" id="workoutDate" value="${today}" required>
+      </label>
+      
+      <label>
+        Duration (seconds) <span style="color: red;">*</span>
+        <input type="number" id="workoutDuration" min="1" required>
+      </label>
+      
+      <label>
+        Weight (kg)
+        <input type="number" id="workoutWeight" min="0" step="0.1">
+      </label>
+      
+      <label>
+        Notes
+        <textarea id="workoutNotes" rows="3"></textarea>
+      </label>
+      
+      <button type="submit">Save Workout</button>
+    </form>
+  `;
+  
+  // Handle form submission
+  const form = document.getElementById('workoutForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const workout = {
+      date: document.getElementById('workoutDate').value,
+      duration: parseInt(document.getElementById('workoutDuration').value),
+      weight: document.getElementById('workoutWeight').value ? parseFloat(document.getElementById('workoutWeight').value) : null,
+      notes: document.getElementById('workoutNotes').value.trim()
+    };
+    
+    // Load existing workouts
+    let workouts = [];
+    try {
+      workouts = JSON.parse(localStorage.getItem('workouts')) || [];
+    } catch (e) {
+      workouts = [];
+    }
+    
+    // Append new workout
+    workouts.push(workout);
+    localStorage.setItem('workouts', JSON.stringify(workouts));
+    
+    // Reset form
+    form.reset();
+    document.getElementById('workoutDate').value = today;
+    
+    alert('Workout saved!');
+  });
+}
+
+// Initialize form when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+  createWorkoutForm();
+}); 
