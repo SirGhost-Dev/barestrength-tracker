@@ -1,0 +1,484 @@
+[
+  {
+    "text": "Stand barefoot on garden grass for 2 minutes",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot to the porch and back",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Sit with your feet in a cold bath",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Take the bins out barefoot",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot on the concrete steps for 1 minute",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot across the garden grass",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "warm",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Do 10 seconds of balancing on one foot barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand on your tiptoes barefoot for 30 seconds",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Roll a tennis ball under your feet barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Lie down and flex your toes barefoot for 2 minutes",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk around your flat barefoot while tidying",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Sweep the garden path barefoot",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Water garden plants barefoot",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot on the dirt patch for 1 minute",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Dip your toes in a bowl of icy water",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Stand in your garden barefoot after a light rain",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "rainy"
+    ]
+  },
+  {
+    "text": "Stretch your toes barefoot on your yoga mat",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot from kitchen to bedroom and back",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Paint your toenails barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Sit in the garden barefoot and read for 5 minutes",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "sunny"
+    ]
+  },
+  {
+    "text": "Place both feet on a warm water bottle barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Put laundry on barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand in garden barefoot and take 5 deep breaths",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Drink a warm drink barefoot on concrete",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Stand on a patch of clover barefoot",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "warm"
+    ]
+  },
+  {
+    "text": "Dry your feet outside in the sun",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "sunny"
+    ]
+  },
+  {
+    "text": "Stand barefoot on your doormat",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Take a barefoot photo of your feet outside",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Roll a cold can under your foot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Rest your bare feet on a cold tile",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Feel your feet in warm laundry barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Step barefoot onto damp stone in garden",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "rainy"
+    ]
+  },
+  {
+    "text": "Take a barefoot selfie in the garden",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "sunny"
+    ]
+  },
+  {
+    "text": "Clean window sills barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot in garden and smell a plant",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Do toe curls on a yoga mat",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Pick up a sock using your toes barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Hold a towel with your toes barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot in the shower (dry)",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot to the shed and back",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Do dishes barefoot on a soft mat",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand on one leg while brushing your teeth barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot slowly along the hallway",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Dry your feet with a towel while barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Clean the bathroom floor barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot in a tray of warm water",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Do ankle rolls while barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Touch your toes barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot on a towel or rug path",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Tap your toes barefoot to music",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Balance barefoot on a rolled-up towel",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Do calf stretches barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot in the garden just after sunrise",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "sunny",
+      "cold"
+    ]
+  },
+  {
+    "text": "Feel the concrete barefoot at dusk",
+    "difficulty": "easy",
+    "location": "outdoors",
+    "weather": [
+      "warm"
+    ]
+  },
+  {
+    "text": "Place feet on frozen peas in a bag",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Walk in a circle barefoot in your living room",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Dip toes into a bowl of pebbles",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Put on lotion and massage feet barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot on the landing by your door",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Dust shelves barefoot",
+    "difficulty": "easy",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  }
+]

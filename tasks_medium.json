@@ -1,0 +1,484 @@
+[
+  {
+    "text": "Walk barefoot down the metal stairs",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Step barefoot into garden after it rains",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "rainy"
+    ]
+  },
+  {
+    "text": "Carry out recycling barefoot",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot across cold tiles in winter",
+    "difficulty": "medium",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Climb up and down your stairs barefoot 3 times",
+    "difficulty": "medium",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot outside at night for 1 minute",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Walk barefoot to the garden shed and pause",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot on wet concrete for 30 seconds",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "rainy"
+    ]
+  },
+  {
+    "text": "Try a 30-second cold foot shower",
+    "difficulty": "medium",
+    "location": "indoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Rinse your feet with a hose in the garden",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "warm",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Carry a watering can to garden barefoot",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Do barefoot stretches in your hallway",
+    "difficulty": "medium",
+    "location": "indoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot around the garden in circles",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot on grass with closed eyes",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Balance barefoot on uneven bricks",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Stand barefoot near your porch while bins are out",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Sit barefoot on steps and read for 5 mins",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Jog barefoot lightly on grass for 20 seconds",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "warm",
+      "sunny"
+    ]
+  },
+  {
+    "text": "Take a barefoot mirror selfie outdoors",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Do gentle yoga barefoot on a towel outside",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "warm"
+    ]
+  },
+  {
+    "text": "Stand barefoot in the cold breeze for 30s",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "cold"
+    ]
+  },
+  {
+    "text": "Step barefoot into muddy soil after watering plants",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "rainy"
+    ]
+  },
+  {
+    "text": "Sweep your outdoor steps barefoot",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Do a slow barefoot lap around your garden",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Sit on concrete barefoot and stretch legs",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  },
+  {
+    "text": "Walk barefoot down the metal stairs (variation)",
+    "difficulty": "medium",
+    "location": "outdoors",
+    "weather": [
+      "any"
+    ]
+  }
+]
