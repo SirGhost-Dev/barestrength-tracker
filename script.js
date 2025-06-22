@@ -240,7 +240,10 @@ function renderAcceptedTasks() {
         <span class="badge badge-${task.difficulty}">${task.difficulty}</span>
         <label>${task.text}</label>
       </div>
-      <button class="complete-task-btn" data-text="${task.text}">Mark Complete</button>
+      <div style="margin-top: 0.5rem;">
+        <button class="complete-task-btn" data-text="${task.text}">Mark Complete</button>
+        <button class="cancel-task-btn" data-text="${task.text}">Cancel</button>
+      </div>
     </div>
   `).join('');
 
@@ -257,6 +260,16 @@ function renderAcceptedTasks() {
       renderFilteredBarefootTasks();
     });
   });
+
+  container.querySelectorAll('.cancel-task-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const text = btn.dataset.text;
+      const accepted = getAcceptedTasks().filter(t => t.text !== text);
+      saveAcceptedTasks(accepted);
+      renderAcceptedTasks();
+      renderFilteredBarefootTasks();
+    });
+  });
 }
 
 function renderCompletedTasks() {
@@ -269,42 +282,25 @@ function renderCompletedTasks() {
     return;
   }
 
-  container.innerHTML = completed.slice().reverse().map(task => `
+  container.innerHTML = completed.slice().reverse().map((task, i) => `
     <div class="widget task-card completed">
       <label>${task.text}</label>
       <span class="date">(${new Date(task.date).toLocaleDateString()})</span>
+      <button class="remove-completed-btn" data-idx="${completed.length - 1 - i}">Remove</button>
     </div>
   `).join('');
-}
 
-function setupTaskControlButtons() {
-  const container = document.getElementById('barefoot');
-  if (!document.getElementById('clearButtonsContainer')) {
-    const btnWrapper = document.createElement('div');
-    btnWrapper.id = 'clearButtonsContainer';
-
-    const clearAccepted = document.createElement('button');
-    clearAccepted.className = 'refresh-btn';
-    clearAccepted.textContent = 'Clear Accepted Tasks';
-    clearAccepted.onclick = () => {
-      localStorage.removeItem('acceptedTasks');
-      renderAcceptedTasks();
-      renderFilteredBarefootTasks();
-    };
-
-    const clearCompleted = document.createElement('button');
-    clearCompleted.className = 'refresh-btn';
-    clearCompleted.textContent = 'Clear Completed Tasks';
-    clearCompleted.onclick = () => {
-      localStorage.removeItem('completedTasks');
+  container.querySelectorAll('.remove-completed-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.dataset.idx);
+      const completed = getCompletedTasks();
+      completed.splice(idx, 1);
+      saveCompletedTasks(completed);
       renderCompletedTasks();
-    };
-
-    btnWrapper.appendChild(clearAccepted);
-    btnWrapper.appendChild(clearCompleted);
-    container.appendChild(btnWrapper);
-  }
+    });
+  });
 }
+
 
 document.getElementById('refreshTasks')?.addEventListener('click', renderFilteredBarefootTasks);
 document.querySelectorAll('.filters input')?.forEach(input => {
