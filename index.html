@@ -1,4 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BareStrength Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- ✅ CSS now loads -->
+</head>
 <body>
+
   <!-- Navigation -->
   <nav>
     <a href="#dashboard">Dashboard</a>
@@ -9,9 +18,10 @@
   <!-- Dashboard View -->
   <div id="dashboard" class="view">
     <h1>Dashboard</h1>
+
     <!-- Workout Chart Widget -->
     <div id="workoutChartContainer">
-      <!-- Chart.js will render here -->
+      <!-- Chart.js chart will render here -->
     </div>
 
     <!-- Barefoot Progress Widget -->
@@ -23,21 +33,23 @@
   <!-- Workouts View -->
   <div id="workouts" class="view" style="display: none;">
     <h1>Workout Tracker</h1>
-    <div id="workoutFormContainer">
-      <!-- Form will go here -->
-    </div>
-    <div id="workoutLogContainer">
-      <!-- Past workouts will list here -->
-    </div>
+
+    <!-- Workout Form will be inserted here via JS -->
+    <div id="workoutFormContainer"></div>
+
+    <!-- Logged Workouts will display here -->
+    <div id="workoutLogContainer"></div>
   </div>
 
   <!-- Barefoot Confidence View -->
   <div id="barefoot" class="view" style="display: none;">
     <h1>Barefoot Confidence</h1>
-    <div id="barefootTasksContainer">
-      <!-- Confidence tasks/checklist will render here -->
-    </div>
+
+    <!-- Tasks/Checklist will be inserted here via JS -->
+    <div id="barefootTasksContainer"></div>
   </div>
 
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
+</html>
