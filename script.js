@@ -11,18 +11,21 @@ function showViewFromHash() {
   });
 
   if (hash === 'barefoot') {
-    renderFilteredBarefootTasks();
-    renderAcceptedTasks();
-    renderCompletedTasks();
-    setupTaskControlButtons();
+    renderBarefootViews();
   }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  showViewFromHash();
+function renderBarefootViews() {
+  renderFilteredBarefootTasks();
+  renderAcceptedTasks();
+  renderCompletedTasks();
+}
+
+window.addEventListener('DOMContentLoaded', async () => {
+  await loadBarefootTasksFromFiles();
   createWorkoutForm();
   renderWorkoutLog();
-  loadBarefootTasksFromFiles();
+  showViewFromHash();
 });
 
 window.addEventListener('hashchange', showViewFromHash);
@@ -49,8 +52,7 @@ function createWorkoutForm() {
     </form>
   `;
 
-  const form = document.getElementById('workoutForm');
-  form.addEventListener('submit', function (e) {
+  document.getElementById('workoutForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
     const workout = {
@@ -60,18 +62,12 @@ function createWorkoutForm() {
       notes: document.getElementById('workoutNotes').value.trim()
     };
 
-    let workouts = [];
-    try {
-      workouts = JSON.parse(localStorage.getItem('workouts')) || [];
-    } catch (e) {
-      workouts = [];
-    }
-
+    let workouts = JSON.parse(localStorage.getItem('workouts')) || [];
     workouts.push(workout);
     localStorage.setItem('workouts', JSON.stringify(workouts));
 
-    form.reset();
-    document.getElementById('workoutDate').value = today;
+    this.reset();
+    document.getElementById('workoutDate').value = new Date().toISOString().split('T')[0];
     document.getElementById('workoutFormMsg').textContent = "Workout saved!";
     renderWorkoutLog();
   });
@@ -81,12 +77,7 @@ function renderWorkoutLog() {
   const container = document.getElementById('workoutLogContainer');
   if (!container) return;
 
-  let workouts = [];
-  try {
-    workouts = JSON.parse(localStorage.getItem('workouts')) || [];
-  } catch (e) {
-    workouts = [];
-  }
+  const workouts = JSON.parse(localStorage.getItem('workouts')) || [];
 
   if (workouts.length === 0) {
     container.innerHTML = `<p>No workouts logged yet.</p>`;
@@ -138,15 +129,10 @@ const taskFiles = ['tasks_easy.json', 'tasks_medium.json', 'tasks_brave.json', '
 async function loadBarefootTasksFromFiles() {
   const allTasks = await Promise.all(
     taskFiles.map(file =>
-      fetch(file)
-        .then(res => res.ok ? res.json() : [])
-        .catch(() => [])
+      fetch(file).then(res => res.ok ? res.json() : []).catch(() => [])
     )
   );
   barefootTasks = allTasks.flat();
-  renderFilteredBarefootTasks();
-  renderAcceptedTasks();
-  renderCompletedTasks();
 }
 
 function getAcceptedTasks() {
@@ -301,8 +287,8 @@ function renderCompletedTasks() {
   });
 }
 
-
+// --- Events ---
 document.getElementById('refreshTasks')?.addEventListener('click', renderFilteredBarefootTasks);
-document.querySelectorAll('.filters input')?.forEach(input => {
+document.querySelectorAll('input')?.forEach(input => {
   input.addEventListener('change', renderFilteredBarefootTasks);
 });
