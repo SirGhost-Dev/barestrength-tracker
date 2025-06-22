@@ -1,48 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BareStrength Tracker</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="nav">
-    <a href="#dashboard" class="nav-link">Dashboard</a>
-    <a href="#workouts" class="nav-link">Workouts</a>
-    <a href="#barefoot" class="nav-link">Barefoot Confidence</a>
+  <!-- Navigation -->
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#workouts">Workouts</a>
+    <a href="#barefoot">Barefoot Confidence</a>
   </nav>
 
-  <main>
-    <!-- Dashboard View: Main overview with workout progress and barefoot confidence widgets -->
-    <div id="dashboard" class="page-view">
-      <div id="workoutChartContainer" class="widget">
-        <!-- Workout Summary Widget: Line graph showing duration progress over time -->
-      </div>
-      <div id="barefootProgressContainer" class="widget">
-        <!-- Barefoot Progress Widget: Confidence tracking and micro goals -->
-      </div>
+  <!-- Dashboard View -->
+  <div id="dashboard" class="view">
+    <h1>Dashboard</h1>
+    <!-- Workout Chart Widget -->
+    <div id="workoutChartContainer">
+      <!-- Chart.js will render here -->
     </div>
 
-    <!-- Workouts View: Track weight-holding duration and view workout history -->
-    <div id="workouts" class="page-view" style="display:none">
-      <div id="workoutFormContainer" class="widget">
-        <!-- Workout Input Form: Date, duration, weight, notes -->
-      </div>
-      <div id="workoutLogContainer" class="widget">
-        <!-- Workout Log: List of past workouts with edit/delete options -->
-      </div>
+    <!-- Barefoot Progress Widget -->
+    <div id="barefootProgressContainer">
+      <!-- Progress tasks or metrics will render here -->
     </div>
+  </div>
 
-    <!-- Barefoot Confidence View: Build barefoot tolerance and confidence -->
-    <div id="barefoot" class="page-view" style="display:none">
-      <div id="barefootTasksContainer" class="widget">
-        <!-- Confidence Tasks: Educational content, micro goals, and confidence rating -->
-      </div>
+  <!-- Workouts View -->
+  <div id="workouts" class="view" style="display: none;">
+    <h1>Workout Tracker</h1>
+    <div id="workoutFormContainer">
+      <!-- Form will go here -->
     </div>
-  </main>
+    <div id="workoutLogContainer">
+      <!-- Past workouts will list here -->
+    </div>
+  </div>
+
+  <!-- Barefoot Confidence View -->
+  <div id="barefoot" class="view" style="display: none;">
+    <h1>Barefoot Confidence</h1>
+    <div id="barefootTasksContainer">
+      <!-- Confidence tasks/checklist will render here -->
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
-</html> 
