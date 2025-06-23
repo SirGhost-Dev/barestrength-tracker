@@ -408,16 +408,17 @@ function renderBarefootProgress() {
   const totalCompleted = completed.length;
 
 container.innerHTML = `
-  <div class="widget progress-card">
+  <div class="progress-widget">
     <h2>Barefoot Progress</h2>
     <p>🏁 <strong>${totalCompleted}</strong> completed · 🎯 <strong>${totalAccepted}</strong> accepted</p>
-    <div class="progress-charts">
-      <div class="chart-box">
-        <canvas id="difficultyChart"></canvas>
-      </div>
-      <div class="chart-box">
-        <canvas id="completionDonut"></canvas>
-      </div>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-box">
+      <canvas id="difficultyChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <canvas id="completionDonut"></canvas>
     </div>
   </div>
 `;
