@@ -308,3 +308,16 @@ button:hover {
     margin-bottom: 1rem;
   }
 }
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  max-width: 100%;
+}
+
+.dashboard-analytics {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}

@@ -133,11 +133,22 @@ function renderWorkoutCharts() {
   const durations = sorted.map(w => w.duration);
   const weights = sorted.map(w => w.weight ?? null);
 
-  const durationCtx = document.getElementById('durationChart');
-  const weightCtx = document.getElementById('weightChart');
+  const durationCanvas = document.getElementById('durationChart');
+  const weightCanvas = document.getElementById('weightChart');
 
-  if (window.durationChart instanceof Chart) window.durationChart.destroy();
-  if (window.weightChart instanceof Chart) window.weightChart.destroy();
+  if (!durationCanvas || !weightCanvas) return; // Avoid issues on mobile when canvas not in DOM yet
+
+  const durationCtx = durationCanvas.getContext('2d');
+  const weightCtx = weightCanvas.getContext('2d');
+
+  if (!durationCtx || !weightCtx) return;
+
+  if (window.durationChart instanceof Chart) {
+    window.durationChart.destroy();
+  }
+  if (window.weightChart instanceof Chart) {
+    window.weightChart.destroy();
+  }
 
   window.durationChart = new Chart(durationCtx, {
     type: 'line',
@@ -153,6 +164,7 @@ function renderWorkoutCharts() {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { display: true }
       },
@@ -176,6 +188,7 @@ function renderWorkoutCharts() {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { display: true }
       },
