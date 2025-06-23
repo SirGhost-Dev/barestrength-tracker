@@ -136,8 +136,8 @@ function renderWorkoutCharts() {
   const durationCtx = document.getElementById('durationChart');
   const weightCtx = document.getElementById('weightChart');
 
-  if (window.durationChart) window.durationChart.destroy();
-  if (window.weightChart) window.weightChart.destroy();
+  if (window.durationChart instanceof Chart) window.durationChart.destroy();
+  if (window.weightChart instanceof Chart) window.weightChart.destroy();
 
   window.durationChart = new Chart(durationCtx, {
     type: 'line',
