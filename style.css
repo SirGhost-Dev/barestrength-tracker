@@ -311,9 +311,14 @@ button:hover {
 
 canvas {
   width: 100% !important;
-  height: 300px !important;
-  max-width: 100%;
+  height: auto !important;
+  aspect-ratio: 2 / 1;
   display: block;
+  max-width: 100%;
+}
+
+#durationChart, #weightChart {
+  min-height: 300px;
 }
 
 .dashboard-analytics {

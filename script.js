@@ -134,10 +134,19 @@ function renderWorkoutCharts() {
 
     if (!durationCanvas || !weightCanvas) return;
 
-    const durationCtx = durationCanvas.getContext('2d');
-    const weightCtx = weightCanvas.getContext('2d');
+    // Scale canvas for high-DPI screens (retina, mobile)
+    function scaleCanvas(canvas) {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      const ctx = canvas.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      return ctx;
+    }
 
-    if (!durationCtx || !weightCtx) return;
+    const durationCtx = scaleCanvas(durationCanvas);
+    const weightCtx = scaleCanvas(weightCanvas);
 
     const sorted = workouts.slice().sort((a, b) => new Date(a.date) - new Date(b.date));
     const labels = sorted.map(w => w.date);
@@ -155,8 +164,9 @@ function renderWorkoutCharts() {
           label: 'Workout Duration (s)',
           data: durations,
           borderWidth: 2,
+          borderColor: '#3498db',
           fill: false,
-          tension: 0.2
+          tension: 0.3
         }]
       },
       options: {
@@ -179,8 +189,9 @@ function renderWorkoutCharts() {
           label: 'Weight (kg)',
           data: weights,
           borderWidth: 2,
+          borderColor: '#2ecc71',
           fill: false,
-          tension: 0.2
+          tension: 0.3
         }]
       },
       options: {
@@ -196,6 +207,7 @@ function renderWorkoutCharts() {
     });
   });
 }
+
 
 
 // --- Barefoot Confidence Task Logic ---
