@@ -16,6 +16,8 @@ function showViewFromHash() {
     renderBarefootViews();
   } else if (hash === 'dashboard') {
     renderWorkoutCharts();
+  renderBarefootProgress()
+
   }
 }
 
@@ -384,6 +386,97 @@ function renderCompletedTasks() {
       saveCompletedTasks(completed);
       renderCompletedTasks();
     });
+  });
+}
+
+function renderBarefootProgress() {
+  const container = document.getElementById('barefootProgressContainer');
+  if (!container) return;
+
+  const accepted = getAcceptedTasks();
+  const completed = getCompletedTasks();
+
+  const difficultyCounts = { easy: 0, medium: 0, brave: 0 };
+  completed.forEach(task => {
+    const diff = task.difficulty?.toLowerCase();
+    if (difficultyCounts.hasOwnProperty(diff)) {
+      difficultyCounts[diff]++;
+    }
+  });
+
+  const totalAccepted = accepted.length;
+  const totalCompleted = completed.length;
+
+  container.innerHTML = `
+    <div class="widget progress-card">
+      <h2>Barefoot Progress</h2>
+      <p>🏁 <strong>${totalCompleted}</strong> completed · 🎯 <strong>${totalAccepted}</strong> accepted</p>
+    </div>
+    <div class="progress-charts">
+      <canvas id="difficultyChart" width="300" height="300"></canvas>
+      <canvas id="completionDonut" width="300" height="300" style="margin-top: 2rem;"></canvas>
+    </div>
+  `;
+
+  // Destroy if exists
+  if (window.difficultyChart instanceof Chart) window.difficultyChart.destroy();
+  if (window.completionDonut instanceof Chart) window.completionDonut.destroy();
+
+  // Chart 1: Difficulty Breakdown (Bar)
+  const diffCtx = document.getElementById('difficultyChart').getContext('2d');
+  window.difficultyChart = new Chart(diffCtx, {
+    type: 'bar',
+    data: {
+      labels: ['Easy', 'Medium', 'Brave'],
+      datasets: [{
+        label: 'Completed Tasks',
+        data: [
+          difficultyCounts.easy,
+          difficultyCounts.medium,
+          difficultyCounts.brave
+        ],
+        backgroundColor: ['#10b981', '#f59e0b', '#ef4444']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: 'Completed Tasks by Difficulty'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          precision: 0
+        }
+      }
+    }
+  });
+
+  // Chart 2: Accepted vs Completed (Donut)
+  const donutCtx = document.getElementById('completionDonut').getContext('2d');
+  window.completionDonut = new Chart(donutCtx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Accepted', 'Completed'],
+      datasets: [{
+        data: [totalAccepted, totalCompleted],
+        backgroundColor: ['#3b82f6', '#10b981']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom' },
+        title: {
+          display: true,
+          text: 'Accepted vs Completed Tasks'
+        }
+      }
+    }
   });
 }
 
