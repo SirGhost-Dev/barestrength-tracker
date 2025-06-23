@@ -312,6 +312,7 @@ button:hover {
 .dashboard-analytics {
   width: 100%;
   max-width: 1000px;
+  max-height: 300px;
   margin: 0 auto;
   padding: 1rem;
   box-sizing: border-box;
@@ -322,9 +323,8 @@ button:hover {
 
 canvas {
   width: 100% !important;
-  height: 300px !important;
+  height: auto !important;
   display: block;
-  image-rendering: pixelated;
 }
 
 #durationChart,
