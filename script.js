@@ -141,7 +141,6 @@ function renderWorkoutCharts() {
     const durations = sorted.map(w => w.duration);
     const weights = sorted.map(w => w.weight ?? null);
 
-    // Destroy previous charts if they exist
     if (window.durationChart instanceof Chart) window.durationChart.destroy();
     if (window.weightChart instanceof Chart) window.weightChart.destroy();
 
@@ -190,6 +189,7 @@ function renderWorkoutCharts() {
     });
   });
 }
+
 
 
 
