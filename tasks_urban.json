@@ -493,5 +493,185 @@
       "sunny",
       "warm"
     ]
+  },
+  {
+    "text": "Walk barefoot past five shops on the High Street without stopping.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Enter a local convenience store barefoot, pick up one item, and leave without purchasing.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Sit barefoot on the edge of Abbey Gardens fountain for 3 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["warm"]
+  },
+  {
+    "text": "Walk barefoot across the King Alfred statue roundabout pedestrian crossings.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Take a barefoot walk through the Brooks Shopping Centre walkway (public corridor only).",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Exit the back of the Winchester station barefoot and walk up the hill path briefly.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot around the outside of Winchester Guildhall and pause at the front steps.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Buy something from a market stall barefoot and make small talk with the vendor.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["sunny"]
+  },
+  {
+    "text": "Take a barefoot stroll across the Itchen footbridge near Chesil Street.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["dry", "warm"]
+  },
+  {
+    "text": "Sit barefoot on the wall near the Theatre Royal entrance during a quiet time.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["warm"]
+  },
+  {
+    "text": "Walk barefoot through the car park of your nearest supermarket.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Enter the front of the Winchester Discovery Centre barefoot and browse the lobby.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk from your flat to a city bench in a visible area and sit barefoot for 5 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Visit a takeaway window or food truck barefoot and stand in line.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["warm", "any"]
+  },
+  {
+    "text": "Cross a zebra crossing barefoot while cars are waiting.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Climb barefoot up the main St. Giles Hill path and sit at the top bench.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["warm", "sunny"]
+  },
+  {
+    "text": "Take off your shoes and walk barefoot halfway up St. Catherine’s Hill spiral path.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Walk barefoot across the grass at Oram's Arbour for 5 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["sunny", "warm"]
+  },
+  {
+    "text": "Sit barefoot at the top of St. Giles Hill near the railings during daylight.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot past the Winchester College playing fields on the public path.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["warm", "sunny"]
+  },
+  {
+    "text": "Stand barefoot on the bridge over the Itchen by St. Catherine’s Lock for 3 minutes.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot from the Water Meadows to the edge of the college fields and back.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["sunny", "dry"]
+  },
+  {
+    "text": "Take a barefoot path through the cemetery next to St. James' Terrace.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Cross barefoot through the Roman ruins near the river by the Wolvesey Castle wall.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["sunny"]
+  },
+  {
+    "text": "Walk barefoot on the footpath behind the College Street gardens toward the Itchen.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Exit the Cathedral through the side gate barefoot and walk to the green’s far edge.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot for 3 minutes at the top of St. Catherine’s Hill, shoes in hand.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["sunny"]
+  },
+  {
+    "text": "Walk barefoot around the perimeter of the Abbey Gardens green area.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["warm"]
+  },
+  {
+    "text": "Sit barefoot near the water by Wharf Mill and dangle your feet close to the river.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["sunny"]
+  },
+  {
+    "text": "Walk the footpath beside the railway near St. Catherine’s Park & Ride barefoot.",
+    "difficulty": "brave",
+    "location": "urban",
+    "weather": ["dry"]
   }
 ]

@@ -494,5 +494,425 @@
     "weather": [
       "any"
     ]
+  },
+    {
+    "text": "Climb barefoot up a muddy trail on St. Catherine’s Hill after light rain.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Cross a patch of thorny weeds barefoot without stopping.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot on damp forest floor for five minutes without shifting.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot along a chalky path on the South Downs Way.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot in a patch of cold, shaded grass at dawn.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk a gravel lane barefoot for at least 100 meters.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Sit barefoot on a mossy log for 3 minutes without moving.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Balance barefoot on a fallen tree trunk for 30 seconds.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Do 10 barefoot walking lunges across a dirt clearing.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Lie back barefoot on the grassy side of a country footpath.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Take a barefoot walk along the edge of a field with uneven ground.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot through dewy grass in early morning.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["wet", "morning"]
+  },
+  {
+    "text": "Do a barefoot circuit around the edge of a forest car park.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot down a bridleway with sticks and debris.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot with one foot on dry dirt and one on mud.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["wet"]
+  },
+  {
+    "text": "Barefoot, crouch in a small clearing surrounded by nettles (don’t touch them).",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot at a gate or stile along a walking route for 2 minutes.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot along the muddy bank of a stream or river.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["wet"]
+  },
+  {
+    "text": "Stand barefoot in a shallow puddle for 60 seconds.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["rain"]
+  },
+  {
+    "text": "Do 10 slow barefoot steps across jagged stones or pebbles.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Barefoot, descend a steep hill path without using your hands.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Walk barefoot across a cow-trodden path or compacted earth trail.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Sit barefoot on the gravel shoulder of a quiet country road.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Balance barefoot on a large uneven rock or boulder.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Take off your shoes mid-hike and continue barefoot for 5 minutes.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Wade barefoot into a shallow creek or river and stand still.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["warm"]
+  },
+  {
+    "text": "Stand barefoot in tall grass until you feel a tickle or insect crawl.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk a farm track barefoot while keeping your eyes closed briefly.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Cross a woodland floor with pine needles barefoot.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot at the edge of a field fence line where animals pass through.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot on a patch of cracked, dry soil under the sun for 2 minutes.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["sunny"]
+  },
+  {
+    "text": "Walk barefoot along a path covered in fallen leaves and hidden twigs.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Climb barefoot over a stile into a field or public path.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Barefoot, walk through a lightly flooded grass trail after rain.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot beside a hedgerow buzzing with insects.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot on dry cracked earth and listen to the sound.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Sit barefoot on a patch of bare soil surrounded by plants.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Climb a tree barefoot and perch with both feet on a branch (low height).",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Do a full circle barefoot around a pond or small lake.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot on a flat rock surrounded by mud or water.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot beside a barbed wire fence or cattle boundary.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Take 20 barefoot steps across a field scattered with dried hay or straw.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot at the top of a windswept hill and look outward for 2 minutes.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk a farm footpath barefoot while someone else passes by.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot over a lumpy, well-worn tractor path.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Barefoot, hop over three puddles along a natural footpath.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["wet"]
+  },
+  {
+    "text": "Kneel barefoot in a natural clearing and place your hands on the earth.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Sit on a grassy slope barefoot and slide or scoot gently downward.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Stand barefoot on a stone marker or public footpath sign base.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Do a slow barefoot march across a ploughed or rutted field edge.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Walk barefoot up the entire spiral path of St. Catherine’s Hill without stopping.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Stand barefoot in the meadow clearing near the summit of St. Giles Hill.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["warm"]
+  },
+  {
+    "text": "Walk barefoot through the Water Meadows path to the back of Winchester College.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Barefoot, walk from the footbridge over the Itchen to the trail at Five Bridges Road.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry", "warm"]
+  },
+  {
+    "text": "Take a barefoot lap around the St. Cross Hospital meadows.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["sunny"]
+  },
+  {
+    "text": "Stand barefoot on the grass island inside the St. Catherine’s Hill summit ring.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot the length of the path from Garnier Road car park to the canal lock.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Stand barefoot at the gravel path junction near the Clarendon Way trail marker.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Barefoot, sit for 2 minutes on a grassy patch at the base of St. Giles Hill path.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Take off your shoes on the bridge by Wharf Mill and walk the rest of the trail barefoot.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Climb barefoot from Domum Road along the Itchen Navigation path.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Stand barefoot on the chalk trail near Chilcomb Lane overlooking the city.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot on the grassy slope beside the Magdalen Hill Down butterfly reserve.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["sunny"]
+  },
+  {
+    "text": "Barefoot, cross the small wooden footbridge over the Itchen near St. Cross and pause.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Walk barefoot to the summit of Deacon Hill and pause to take in the view.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry", "warm"]
+  },
+  {
+    "text": "Pace barefoot for 2 minutes around the tree stump clearing in the Water Meadows.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Take a barefoot walk down the South Downs Way beginning at Chilcomb village trailhead.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry"]
+  },
+  {
+    "text": "Stand barefoot in the tall grass beside the Itchen near the footpath behind St. Cross.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
+  },
+  {
+    "text": "Barefoot, walk from the end of College Walk to Blackbridge Road via the riverside trail.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["dry", "any"]
+  },
+  {
+    "text": "Stand barefoot for 3 minutes on the flint-and-dirt trail edge near the King’s Gate Walk.",
+    "difficulty": "brave",
+    "location": "outdoor",
+    "weather": ["any"]
   }
 ]
