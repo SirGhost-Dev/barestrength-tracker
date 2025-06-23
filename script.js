@@ -10,6 +10,8 @@ function showViewFromHash() {
     }
   });
 
+  Chart.defaults.resolution = window.devicePixelRatio;
+
   if (hash === 'barefoot') {
     renderBarefootViews();
   } else if (hash === 'dashboard') {
