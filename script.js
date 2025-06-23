@@ -155,6 +155,10 @@ function renderWorkoutCharts() {
     const dpr = window.devicePixelRatio || 1;
 
     // Sharp rendering for duration chart
+    if (durationCanvas.clientWidth === 0) {
+      console.warn('durationCanvas has zero width; deferring render');
+      return;
+    } 
     const durationCtx = durationCanvas.getContext('2d');
     durationCanvas.width = durationCanvas.clientWidth * dpr;
     durationCanvas.height = 300 * dpr; // match your layout height
