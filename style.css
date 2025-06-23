@@ -352,7 +352,17 @@ canvas {
 .progress-charts {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
   margin-top: 1rem;
+}
+
+.chart-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.chart-box canvas {
+  width: 100% !important;
+  height: auto !important;
 }
