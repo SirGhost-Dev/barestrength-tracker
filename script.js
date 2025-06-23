@@ -150,6 +150,20 @@ function renderWorkoutCharts() {
 
     if (!durationCanvas || !weightCanvas) return;
 
+    const dpr = window.devicePixelRatio || 1;
+
+    // Sharp rendering for duration chart
+    const durationCtx = durationCanvas.getContext('2d');
+    durationCanvas.width = durationCanvas.clientWidth * dpr;
+    durationCanvas.height = 300 * dpr; // match your layout height
+    durationCtx.scale(dpr, dpr);
+
+    // Sharp rendering for weight chart
+    const weightCtx = weightCanvas.getContext('2d');
+    weightCanvas.width = weightCanvas.clientWidth * dpr;
+    weightCanvas.height = 300 * dpr;
+    weightCtx.scale(dpr, dpr);
+
     const sorted = workouts.slice().sort((a, b) => new Date(a.date) - new Date(b.date));
     const labels = sorted.map(w => w.date);
     const durations = sorted.map(w => w.duration);
@@ -172,7 +186,7 @@ function renderWorkoutCharts() {
       }
     };
 
-    window.durationChart = new Chart(durationCanvas.getContext('2d'), {
+    window.durationChart = new Chart(durationCtx, {
       ...chartOptions,
       data: {
         labels,
@@ -187,7 +201,7 @@ function renderWorkoutCharts() {
       }
     });
 
-    window.weightChart = new Chart(weightCanvas.getContext('2d'), {
+    window.weightChart = new Chart(weightCtx, {
       ...chartOptions,
       data: {
         labels,
@@ -203,7 +217,6 @@ function renderWorkoutCharts() {
     });
   });
 }
-
 
 
 

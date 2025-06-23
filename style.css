@@ -322,10 +322,9 @@ button:hover {
 
 canvas {
   width: 100% !important;
+  height: 300px !important;
   display: block;
-  box-sizing: border-box;
-  height: auto !important;
-  aspect-ratio: 2 / 1;
+  image-rendering: pixelated;
 }
 
 #durationChart,
