@@ -136,21 +136,12 @@ function renderWorkoutCharts() {
 
     if (!durationCanvas || !weightCanvas) return;
 
-    // Explicitly set canvas width and height based on device pixel ratio
-    [durationCanvas, weightCanvas].forEach(canvas => {
-      const dpr = window.devicePixelRatio || 1;
-      const rect = canvas.getBoundingClientRect();
-      canvas.width = rect.width * dpr;
-      canvas.height = rect.height * dpr;
-      const ctx = canvas.getContext('2d');
-      ctx.scale(dpr, dpr);
-    });
-
     const sorted = workouts.slice().sort((a, b) => new Date(a.date) - new Date(b.date));
     const labels = sorted.map(w => w.date);
     const durations = sorted.map(w => w.duration);
     const weights = sorted.map(w => w.weight ?? null);
 
+    // Destroy previous charts if they exist
     if (window.durationChart instanceof Chart) window.durationChart.destroy();
     if (window.weightChart instanceof Chart) window.weightChart.destroy();
 
@@ -199,6 +190,7 @@ function renderWorkoutCharts() {
     });
   });
 }
+
 
 
 
