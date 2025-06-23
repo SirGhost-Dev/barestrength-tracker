@@ -136,19 +136,15 @@ function renderWorkoutCharts() {
 
     if (!durationCanvas || !weightCanvas) return;
 
-    // Scale canvas for high-DPI screens (retina, mobile)
-    function scaleCanvas(canvas) {
+    // Explicitly set canvas width and height based on device pixel ratio
+    [durationCanvas, weightCanvas].forEach(canvas => {
       const dpr = window.devicePixelRatio || 1;
       const rect = canvas.getBoundingClientRect();
       canvas.width = rect.width * dpr;
       canvas.height = rect.height * dpr;
       const ctx = canvas.getContext('2d');
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      return ctx;
-    }
-
-    const durationCtx = scaleCanvas(durationCanvas);
-    const weightCtx = scaleCanvas(weightCanvas);
+      ctx.scale(dpr, dpr);
+    });
 
     const sorted = workouts.slice().sort((a, b) => new Date(a.date) - new Date(b.date));
     const labels = sorted.map(w => w.date);
@@ -158,57 +154,52 @@ function renderWorkoutCharts() {
     if (window.durationChart instanceof Chart) window.durationChart.destroy();
     if (window.weightChart instanceof Chart) window.weightChart.destroy();
 
-    window.durationChart = new Chart(durationCtx, {
+    const chartOptions = {
       type: 'line',
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: true }
+        },
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    };
+
+    window.durationChart = new Chart(durationCanvas.getContext('2d'), {
+      ...chartOptions,
       data: {
         labels,
         datasets: [{
           label: 'Workout Duration (s)',
           data: durations,
           borderWidth: 2,
-          borderColor: '#3498db',
           fill: false,
-          tension: 0.3
+          tension: 0.2,
+          borderColor: '#2563eb'
         }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: true }
-        },
-        scales: {
-          y: { beginAtZero: true }
-        }
       }
     });
 
-    window.weightChart = new Chart(weightCtx, {
-      type: 'line',
+    window.weightChart = new Chart(weightCanvas.getContext('2d'), {
+      ...chartOptions,
       data: {
         labels,
         datasets: [{
           label: 'Weight (kg)',
           data: weights,
           borderWidth: 2,
-          borderColor: '#2ecc71',
           fill: false,
-          tension: 0.3
+          tension: 0.2,
+          borderColor: '#f59e0b'
         }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: true }
-        },
-        scales: {
-          y: { beginAtZero: true }
-        }
       }
     });
   });
 }
+
 
 
 
