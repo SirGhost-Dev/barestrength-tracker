@@ -129,7 +129,21 @@ function renderWorkoutLog() {
 function renderWorkoutCharts() {
   requestAnimationFrame(() => {
     const workouts = JSON.parse(localStorage.getItem('workouts')) || [];
-    if (workouts.length === 0) return;
+
+    if (workouts.length === 0) {
+      console.log("No workouts found. Not rendering charts.");
+
+      const msg = document.getElementById('workoutEmptyMessage');
+      if (msg) {
+        msg.innerHTML = `
+          <p style="margin-top: 1rem; font-style: italic;">
+            No workout data yet. Log your first workout to see your progress here.
+          </p>
+        `;
+      }
+
+      return;
+    }
 
     const durationCanvas = document.getElementById('durationChart');
     const weightCanvas = document.getElementById('weightChart');
