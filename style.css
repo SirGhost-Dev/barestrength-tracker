@@ -311,9 +311,9 @@ button:hover {
 
 canvas {
   width: 100% !important;
-  height: auto !important;
-  display: block;
+  height: 300px !important;
   max-width: 100%;
+  display: block;
 }
 
 .dashboard-analytics {

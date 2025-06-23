@@ -125,79 +125,78 @@ function renderWorkoutLog() {
 }
 
 function renderWorkoutCharts() {
-  const workouts = JSON.parse(localStorage.getItem('workouts')) || [];
-  if (workouts.length === 0) return;
+  requestAnimationFrame(() => {
+    const workouts = JSON.parse(localStorage.getItem('workouts')) || [];
+    if (workouts.length === 0) return;
 
-  const sorted = workouts.slice().sort((a, b) => new Date(a.date) - new Date(b.date));
-  const labels = sorted.map(w => w.date);
-  const durations = sorted.map(w => w.duration);
-  const weights = sorted.map(w => w.weight ?? null);
+    const durationCanvas = document.getElementById('durationChart');
+    const weightCanvas = document.getElementById('weightChart');
 
-  const durationCanvas = document.getElementById('durationChart');
-  const weightCanvas = document.getElementById('weightChart');
+    if (!durationCanvas || !weightCanvas) return;
 
-  if (!durationCanvas || !weightCanvas) return; // Avoid issues on mobile when canvas not in DOM yet
+    const durationCtx = durationCanvas.getContext('2d');
+    const weightCtx = weightCanvas.getContext('2d');
 
-  const durationCtx = durationCanvas.getContext('2d');
-  const weightCtx = weightCanvas.getContext('2d');
+    if (!durationCtx || !weightCtx) return;
 
-  if (!durationCtx || !weightCtx) return;
+    const sorted = workouts.slice().sort((a, b) => new Date(a.date) - new Date(b.date));
+    const labels = sorted.map(w => w.date);
+    const durations = sorted.map(w => w.duration);
+    const weights = sorted.map(w => w.weight ?? null);
 
-  if (window.durationChart instanceof Chart) {
-    window.durationChart.destroy();
-  }
-  if (window.weightChart instanceof Chart) {
-    window.weightChart.destroy();
-  }
+    if (window.durationChart instanceof Chart) window.durationChart.destroy();
+    if (window.weightChart instanceof Chart) window.weightChart.destroy();
 
-  window.durationChart = new Chart(durationCtx, {
-    type: 'line',
-    data: {
-      labels,
-      datasets: [{
-        label: 'Workout Duration (s)',
-        data: durations,
-        borderWidth: 2,
-        fill: false,
-        tension: 0.2
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: true }
+    window.durationChart = new Chart(durationCtx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Workout Duration (s)',
+          data: durations,
+          borderWidth: 2,
+          fill: false,
+          tension: 0.2
+        }]
       },
-      scales: {
-        y: { beginAtZero: true }
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: true }
+        },
+        scales: {
+          y: { beginAtZero: true }
+        }
       }
-    }
-  });
+    });
 
-  window.weightChart = new Chart(weightCtx, {
-    type: 'line',
-    data: {
-      labels,
-      datasets: [{
-        label: 'Weight (kg)',
-        data: weights,
-        borderWidth: 2,
-        fill: false,
-        tension: 0.2
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: true }
+    window.weightChart = new Chart(weightCtx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Weight (kg)',
+          data: weights,
+          borderWidth: 2,
+          fill: false,
+          tension: 0.2
+        }]
       },
-      scales: {
-        y: { beginAtZero: true }
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: true }
+        },
+        scales: {
+          y: { beginAtZero: true }
+        }
       }
-    }
+    });
   });
 }
+
 
 // --- Barefoot Confidence Task Logic ---
 let barefootTasks = [];
