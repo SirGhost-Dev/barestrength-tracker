@@ -334,12 +334,10 @@ canvas {
 
 #durationChart,
 #weightChart {
+  height: 300px;
   display: block;
   width: 100%;
-  height: 300px; /* Or whatever you want */
-  margin-bottom: 2rem;
 }
-
 @media (max-width: 768px) {
   canvas {
     aspect-ratio: 1.5 / 1;
