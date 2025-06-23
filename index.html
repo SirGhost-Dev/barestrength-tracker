@@ -18,7 +18,11 @@
     <div id="dashboard" class="view">
       <div class="container">
         <h1>Dashboard</h1>
-        <div id="workoutChartContainer"></div>
+        <div id="workoutChartContainer" class="dashboard-analytics">
+          <h2>Workout Analytics</h2>
+          <canvas id="durationChart"></canvas>
+          <canvas id="weightChart" style="margin-top: 2rem;"></canvas>
+        </div>
         <div id="barefootProgressContainer"></div>
       </div>
     </div>
@@ -80,6 +84,8 @@
     </div>
   </main>
 
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

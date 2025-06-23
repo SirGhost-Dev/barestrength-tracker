@@ -12,6 +12,8 @@ function showViewFromHash() {
 
   if (hash === 'barefoot') {
     renderBarefootViews();
+  } else if (hash === 'dashboard') {
+    renderWorkoutCharts();
   }
 }
 
@@ -119,6 +121,68 @@ function renderWorkoutLog() {
       localStorage.setItem('workouts', JSON.stringify(workouts));
       renderWorkoutLog();
     });
+  });
+}
+
+function renderWorkoutCharts() {
+  const workouts = JSON.parse(localStorage.getItem('workouts')) || [];
+  if (workouts.length === 0) return;
+
+  const sorted = workouts.slice().sort((a, b) => new Date(a.date) - new Date(b.date));
+  const labels = sorted.map(w => w.date);
+  const durations = sorted.map(w => w.duration);
+  const weights = sorted.map(w => w.weight ?? null);
+
+  const durationCtx = document.getElementById('durationChart');
+  const weightCtx = document.getElementById('weightChart');
+
+  if (window.durationChart) window.durationChart.destroy();
+  if (window.weightChart) window.weightChart.destroy();
+
+  window.durationChart = new Chart(durationCtx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Workout Duration (s)',
+        data: durations,
+        borderWidth: 2,
+        fill: false,
+        tension: 0.2
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true }
+      },
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+
+  window.weightChart = new Chart(weightCtx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Weight (kg)',
+        data: weights,
+        borderWidth: 2,
+        fill: false,
+        tension: 0.2
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true }
+      },
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
   });
 }
 
